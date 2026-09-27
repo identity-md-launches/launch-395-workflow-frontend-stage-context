@@ -1,0 +1,42 @@
+{
+  "axeViolations": [],
+  "axePasses": 41,
+  "contrast": [
+    {
+      "selector": "body",
+      "foreground": "rgb(37, 43, 38)",
+      "background": "rgb(245, 245, 237)",
+      "ratio": 13.198126461721028
+    },
+    {
+      "selector": ".intro-copy",
+      "foreground": "rgb(96, 103, 95)",
+      "background": "rgb(245, 245, 237)",
+      "ratio": 5.3199897305944805
+    },
+    {
+      "selector": ".window-description",
+      "foreground": "rgb(36, 59, 46)",
+      "background": "rgb(229, 237, 206)",
+      "ratio": 9.963228375168926
+    },
+    {
+      "selector": ".pill.positive",
+      "foreground": "rgb(55, 82, 43)",
+      "background": "rgb(230, 239, 223)",
+      "ratio": 7.393895093642653
+    },
+    {
+      "selector": ".button.primary:not(:disabled)",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(81, 65, 172)",
+      "ratio": 7.772894386041907
+    },
+    {
+      "selector": ".swap-panel .tiny",
+      "foreground": "rgb(96, 103, 95)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.828956585984553
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "result": "pass",
+  "assets": 9,
+  "exportBytes": 590646,
+  "contracts": [
+    {
+      "name": "Allowlist",
+      "abiHash": "127e8014008107e4c9a70b7eb68dcc06985fe6ccfe108ee023be87a938a9eab3"
+    },
+    {
+      "name": "AllowlistLaunchHook",
+      "abiHash": "722ef304d692a0aae8cb5fc66a2c89f6e1c32cfac857740cdf85aa022c809a70"
+    }
+  ],
+  "sourceCommit": "08396f8a2a57439278b3a7f01ac26550bb2277a9"
+}

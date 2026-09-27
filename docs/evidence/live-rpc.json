@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-09-27T07:18:49.108Z",
+  "poolId": "0xc5d461966967beec277f88f9bf3ab4b5d922af43648a547468403885376949a0",
+  "endpoints": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "code": [
+        {
+          "name": "Allowlist",
+          "address": "0x2015a8219170ab3a182b04eb3aec5c03d90d8ed9",
+          "bytes": 2610
+        },
+        {
+          "name": "AllowlistLaunchHook",
+          "address": "0x4603d148f937794acfaad2763afb439842df5080",
+          "bytes": 3918
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "url": "https://rpc.sepolia.ethpandaops.io",
+      "chainId": 11155111,
+      "code": [
+        {
+          "name": "Allowlist",
+          "address": "0x2015a8219170ab3a182b04eb3aec5c03d90d8ed9",
+          "bytes": 2610
+        },
+        {
+          "name": "AllowlistLaunchHook",
+          "address": "0x4603d148f937794acfaad2763afb439842df5080",
+          "bytes": 3918
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "url": "https://sepolia.rpc.sentio.xyz",
+      "chainId": 11155111,
+      "code": [
+        {
+          "name": "Allowlist",
+          "address": "0x2015a8219170ab3a182b04eb3aec5c03d90d8ed9",
+          "bytes": 2610
+        },
+        {
+          "name": "AllowlistLaunchHook",
+          "address": "0x4603d148f937794acfaad2763afb439842df5080",
+          "bytes": 3918
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        },
+        {
+          "name": "poolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "stateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        }
+      ],
+      "result": "pass"
+    }
+  ],
+  "state": {
+    "block": "11791789",
+    "timestamp": "1790493528",
+    "openAt": "1790578704",
+    "open": false,
+    "slot": [
+      "560227709747861399187319382274582",
+      177284,
+      0,
+      3000
+    ],
+    "liquidity": "0",
+    "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+  },
+  "broadcastTransactions": 0
+}

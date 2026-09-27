@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "launchId": "a2f8eb8f-f043-4662-8083-60c2dc62e45d",
+  "chainId": 11155111,
+  "sourceCommit": "08396f8a2a57439278b3a7f01ac26550bb2277a9",
+  "attestationHash": "731560ba743832dc14314903b6617f47839f7e73e04226e8362752b755f85b93",
+  "contracts": [
+    {
+      "name": "Allowlist",
+      "address": "0x2015a8219170ab3a182b04eb3aec5c03d90d8ed9",
+      "abiHash": "127e8014008107e4c9a70b7eb68dcc06985fe6ccfe108ee023be87a938a9eab3",
+      "abiPath": "abi/Allowlist.json"
+    },
+    {
+      "name": "AllowlistLaunchHook",
+      "address": "0x4603d148f937794acfaad2763afb439842df5080",
+      "abiHash": "722ef304d692a0aae8cb5fc66a2c89f6e1c32cfac857740cdf85aa022c809a70",
+      "abiPath": "abi/AllowlistLaunchHook.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "abi/Allowlist.json",
+      "sha256": "3bda1d9a4ae55a6e763035fede5113e092501af939b0ee76956942e4f3de0417"
+    },
+    {
+      "path": "abi/AllowlistLaunchHook.json",
+      "sha256": "24dec08ee0b3f935dd8445468c912a68ae5beebf6a42df6ded82f895c048635a"
+    },
+    {
+      "path": "abi/PoolSwapTest.json",
+      "sha256": "515484a7b8289078d8914d1634fd4b707bc155f0f89ba996cf5a358d0b85ae4d"
+    },
+    {
+      "path": "abi/StateView.json",
+      "sha256": "ebb84c18ccc8a61a20a0544a649d1f8ff489f894bc0183b4eeefa27bcf32c57c"
+    },
+    {
+      "path": "abi/V4Quoter.json",
+      "sha256": "7e2444488c653a533bdb5890871ab72fedae15b0220afb5389eab170e48bb698"
+    },
+    {
+      "path": "assets/ccip-D5KuwGR0.js",
+      "sha256": "b8fac86e1204b943e280acb12e9a1b13936f9db3be19857d409e1b9666bb716e"
+    },
+    {
+      "path": "assets/index-BmtwUc1g.js",
+      "sha256": "05bec6b2c01f0ad0ced5136660dcca2abab344b443e8583824b11e54f0d5633b"
+    },
+    {
+      "path": "assets/index-D8yt8Wis.css",
+      "sha256": "1f2efbd0f36ac70c0e99a70ea8ad43b53c9f6e2b8ad2f86aa753837c1075a66c"
+    },
+    {
+      "path": "index.html",
+      "sha256": "2ff5dd7496f748848bb9b84411185f58f1c706aaa6860ff3e778fbb77dfae0e5"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0xaa36a7",
+    "chainName": "Sepolia",
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://sepolia.etherscan.io"
+    ]
+  },
+  "pool": {
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336",
+    "pairedCurrency": "0x0000000000000000000000000000000000000000"
+  },
+  "token": {
+    "name": "Allowlist",
+    "symbol": "ALST",
+    "contract": "Allowlist",
+    "decimals": 18
+  },
+  "hook": {
+    "contract": "AllowlistLaunchHook"
+  },
+  "integrations": {
+    "swapRouter": {
+      "name": "PoolSwapTest",
+      "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+      "abiPath": "abi/PoolSwapTest.json"
+    },
+    "quoterAbiPath": "abi/V4Quoter.json",
+    "stateViewAbiPath": "abi/StateView.json"
+  }
+}

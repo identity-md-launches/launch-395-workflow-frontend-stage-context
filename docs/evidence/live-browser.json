@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-09-27T07:28:09.991Z",
+  "browser": "153.0.8010.12",
+  "mocked": false,
+  "transactionsBroadcast": 0,
+  "errors": [],
+  "resourceFailures": [],
+  "result": "pass",
+  "liveState": "LIVE POOL PRICE\n1 ETH ≈ 50,000,000 ALST\nACCESS THRESHOLD\n1 ALST during the window\nLATEST BLOCK\n11791835 0s since refresh",
+  "launchWindow": "01 / LAUNCH WINDOW\n\nHolder window\nYour place at the start.\n\nThe first 24 hours belong to wallets holding ALST.\n\n23\nHours\n30\nMinutes\n24\nSeconds\n↗\n\nPublic trading begins\nSep 28, 2026, 8:58 AM"
+}

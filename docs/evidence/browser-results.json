@@ -1,0 +1,78 @@
+{
+  "urlPath": "/preview/",
+  "browser": "153.0.8010.12",
+  "mockedWalletAndRpc": true,
+  "transactionsBroadcast": 0,
+  "results": [
+    {
+      "name": "Static gateway subpath, disconnected state, local assets",
+      "result": "pass"
+    },
+    {
+      "name": "No injected wallet and rejected connection recover visibly",
+      "result": "pass"
+    },
+    {
+      "name": "Unknown network: switch, exact add-chain parameters, switch again",
+      "result": "pass"
+    },
+    {
+      "name": "Holder eligibility, exact amounts, validation, native buy and receipt",
+      "result": "pass"
+    },
+    {
+      "name": "Token sell: exact router approval, fresh quote, simulation and receipt",
+      "result": "pass"
+    },
+    {
+      "name": "Quote invalidation on edits, expiry and wallet account/network changes",
+      "result": "pass"
+    },
+    {
+      "name": "Nonholder and below-threshold access; public boundary opens access",
+      "result": "pass"
+    },
+    {
+      "name": "Simulation revert and partial fill both block signing",
+      "result": "pass"
+    },
+    {
+      "name": "Signing rejection and insufficient funds remain recoverable",
+      "result": "pass"
+    },
+    {
+      "name": "RPC failure disables swaps; retry recovers; missing code fails verification",
+      "result": "pass"
+    },
+    {
+      "name": "Stalled block timestamps disable signing",
+      "result": "pass"
+    },
+    {
+      "name": "ABI tampering disables configuration",
+      "result": "pass"
+    },
+    {
+      "name": "Contract wallet limitation is visible during the window",
+      "result": "pass"
+    },
+    {
+      "name": "Keyboard-only connect, quote and native swap flow",
+      "result": "pass"
+    },
+    {
+      "name": "Desktop/mobile/intermediate reflow, keyboard focus and accessibility scan",
+      "result": "pass"
+    }
+  ],
+  "screenshots": [
+    "docs/evidence/desktop-disconnected.png",
+    "docs/evidence/desktop-connected.png",
+    "docs/evidence/width-768.png",
+    "docs/evidence/width-390.png",
+    "docs/evidence/width-320.png",
+    "docs/evidence/text-200-percent.png",
+    "docs/evidence/keyboard-focus.png"
+  ],
+  "consoleErrors": []
+}

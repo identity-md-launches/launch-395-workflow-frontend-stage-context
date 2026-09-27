@@ -1,0 +1,213 @@
+{
+  "result": "pass",
+  "scope": "working-tree additions; existing source unchanged",
+  "ignoredDependencyProbe": "web/node_modules/react/package.json",
+  "changedFiles": [
+    {
+      "path": "dist/abi/Allowlist.json",
+      "bytes": 5754
+    },
+    {
+      "path": "dist/abi/AllowlistLaunchHook.json",
+      "bytes": 22977
+    },
+    {
+      "path": "dist/abi/PoolSwapTest.json",
+      "bytes": 1627
+    },
+    {
+      "path": "dist/abi/StateView.json",
+      "bytes": 906
+    },
+    {
+      "path": "dist/abi/V4Quoter.json",
+      "bytes": 1471
+    },
+    {
+      "path": "dist/assets/ccip-D5KuwGR0.js",
+      "bytes": 2835
+    },
+    {
+      "path": "dist/assets/index-BmtwUc1g.js",
+      "bytes": 536361
+    },
+    {
+      "path": "dist/assets/index-D8yt8Wis.css",
+      "bytes": 14111
+    },
+    {
+      "path": "dist/imd-deployment.json",
+      "bytes": 3986
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 618
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "bytes": 9713
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 12386
+    },
+    {
+      "path": "docs/evidence/accessibility.json",
+      "bytes": 1059
+    },
+    {
+      "path": "docs/evidence/browser-results.json",
+      "bytes": 2164
+    },
+    {
+      "path": "docs/evidence/desktop-connected.png",
+      "bytes": 209702
+    },
+    {
+      "path": "docs/evidence/desktop-disconnected.png",
+      "bytes": 202124
+    },
+    {
+      "path": "docs/evidence/desktop-live.png",
+      "bytes": 204202
+    },
+    {
+      "path": "docs/evidence/export-check.json",
+      "bytes": 404
+    },
+    {
+      "path": "docs/evidence/keyboard-focus.png",
+      "bytes": 202349
+    },
+    {
+      "path": "docs/evidence/live-browser.json",
+      "bytes": 562
+    },
+    {
+      "path": "docs/evidence/live-rpc.json",
+      "bytes": 3518
+    },
+    {
+      "path": "docs/evidence/text-200-percent.png",
+      "bytes": 447280
+    },
+    {
+      "path": "docs/evidence/width-320.png",
+      "bytes": 194539
+    },
+    {
+      "path": "docs/evidence/width-390.png",
+      "bytes": 193195
+    },
+    {
+      "path": "docs/evidence/width-768.png",
+      "bytes": 211491
+    },
+    {
+      "path": "web/.gitignore",
+      "bytes": 171
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 9260
+    },
+    {
+      "path": "web/config/deployment-handoff.json",
+      "bytes": 5344
+    },
+    {
+      "path": "web/config/integration-abis.mjs",
+      "bytes": 1430
+    },
+    {
+      "path": "web/config/integrations.json",
+      "bytes": 238
+    },
+    {
+      "path": "web/config/network.json",
+      "bytes": 1403
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 519
+    },
+    {
+      "path": "web/package-lock.json",
+      "bytes": 49812
+    },
+    {
+      "path": "web/package.json",
+      "bytes": 850
+    },
+    {
+      "path": "web/scripts/check-browser-live.mjs",
+      "bytes": 2116
+    },
+    {
+      "path": "web/scripts/check-export.mjs",
+      "bytes": 2502
+    },
+    {
+      "path": "web/scripts/check-live.mjs",
+      "bytes": 2765
+    },
+    {
+      "path": "web/scripts/check-submission.mjs",
+      "bytes": 3217
+    },
+    {
+      "path": "web/scripts/export.mjs",
+      "bytes": 2905
+    },
+    {
+      "path": "web/src/App.tsx",
+      "bytes": 25989
+    },
+    {
+      "path": "web/src/chain.ts",
+      "bytes": 10608
+    },
+    {
+      "path": "web/src/config.ts",
+      "bytes": 4739
+    },
+    {
+      "path": "web/src/main.tsx",
+      "bytes": 158
+    },
+    {
+      "path": "web/src/protocol.mjs",
+      "bytes": 2824
+    },
+    {
+      "path": "web/src/styles.css",
+      "bytes": 16243
+    },
+    {
+      "path": "web/tests/browser.mjs",
+      "bytes": 21985
+    },
+    {
+      "path": "web/tests/core.test.mjs",
+      "bytes": 2039
+    },
+    {
+      "path": "web/tsconfig.json",
+      "bytes": 411
+    },
+    {
+      "path": "web/vite.config.ts",
+      "bytes": 870
+    }
+  ],
+  "deliveryBytesExcludingThisReport": 2653732,
+  "completeTreeBytesExcludingThisReport": 4560162,
+  "existingHistoryBundleBytes": 338906,
+  "conservativeBundleAccountingBytesExcludingThisReport": 3058174,
+  "maximumBundleBytes": 8388608,
+  "actualFrontendCommitBundle": "unavailable: .git is read-only; Git staging failed with EROFS",
+  "ignoreFileBudget": [
+    "web/.gitignore"
+  ],
+  "submodules": 0
+}

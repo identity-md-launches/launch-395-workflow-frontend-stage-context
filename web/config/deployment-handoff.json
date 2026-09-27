@@ -1,0 +1,53 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-347-allowlistlaunchhook",
+  "version": 1,
+  "launchId": "a2f8eb8f-f043-4662-8083-60c2dc62e45d",
+  "manifest": {
+    "hook": {
+      "contract": "AllowlistLaunchHook",
+      "permissions": [
+        "afterInitialize",
+        "beforeSwap"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Technical description of the accepted implementation (src/, docs/abi/); it sets no deployment policy. Token: Allowlist (ALST), src/Allowlist.sol, solmate ERC20, 18 decimals, constructor() with no arguments; the whole fixed supply (TOTAL_SUPPLY constant) is minted once to msg.sender in the constructor. No owner, no mint path afterwards, no pause, no proxy, no selfdestruct. Hook: AllowlistLaunchHook, src/AllowlistLaunchHook.sol, extends v4-periphery BaseHook. Constructor (IPoolManager poolManager); the single argument above is the Sepolia PoolManager 0xE03A1074c86CFeDd5C142C4F04F1a1536e203543. No owner, signer, admin, fee or recipient; nothing can extend, shorten or reopen a window. getHookPermissions returns exactly afterInitialize and beforeSwap (address bits 0x1080 = AFTER_INITIALIZE 1<<12 | BEFORE_SWAP 1<<7). No return deltas, no donate or liquidity callbacks: the factory's pool initialisation and one-sided ALST seed cannot be reverted by the hook, and liquidity can be added or removed at any time, including inside the window. Behaviour: state keyed by PoolId. afterInitialize, when currency0 is native ETH, records openAt[poolId] = block.timestamp + 24 hours and the pool's currency1; other pools are never gated. beforeSwap, while block.timestamp < openAt, admits a swap in either direction only if tx.origin holds at least MIN_BALANCE = 1e18 units of currency1, read by a low-level staticcall to balanceOf capped at 50,000 gas and decoded only when it returns exactly 32 bytes (revert, out-of-gas or malformed return count as zero); otherwise it reverts NotAllowlisted(tx.origin). Each admitted swap emits HolderSwap(poolId, origin, balance). From openAt on anyone swaps and nothing is read. Views: openAt(poolId), isOpen(poolId), isAllowed(poolId, account), gatedCurrency1(poolId). tx.origin limits (also in NatSpec and README): contract and ERC-4337 wallets are judged by the sending EOA, a phishing contract can make a holder swap, sending 1 ALST adds a wallet to the list, the window can pass with no swaps, tx.origin is never read after the window. Pool: currency0 = native ETH (pairedCurrency 0x0), currency1 = ALST, static LP fee 3000, tickSpacing 60, hooks = AllowlistLaunchHook. initialPrice is sqrtPriceX96 = 2^96 = 79228162514264337593543950336 (1 ALST per 1 ETH in raw units, tick 0), the opening price used by the test launch rehearsal; the factory seeds one-sided ALST liquidity above tick 0 so the first buy (zeroForOne, ETH in) lands in a pool holding no ETH. Toolchain: solc 0.8.26, optimizer 200 runs, evm cancun, bytecode_hash none, no via-IR. Tests (forge test, 29 tests against a real v4-core PoolManager): launch rehearsal with one-sided seed, first buy from a holder, then a sell; refusals for a non-holder, 1 ALST minus 1 wei, and msg.sender-only holding; misbehaving currency1 (revert, 0/31/64-byte return, gas burn, reentry) gives NotAllowlisted; window boundary at openAt; liquidity never gated; non-native pools never gated; callbacks refuse non-PoolManager callers; permissions match 0x1080 bit for bit; token supply, single mint, no mint path, exact transfers, fuzzed supply conservation and threshold. Deployment: the hook must be placed by CREATE2 at an address whose low 14 bits are 0x1080 (BaseHook validates in the constructor). Supply, allocations, chain and gas limits come from the separately versioned launch policy, not from this file.",
+    "token": {
+      "name": "Allowlist",
+      "symbol": "ALST",
+      "contract": "Allowlist",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "Allowlist",
+      "txHash": "0x5be2e8a51334113be66fab2285dc0fa170c08d5de8b3eddf87b9b4c94647bc1e",
+      "abiHash": "127e8014008107e4c9a70b7eb68dcc06985fe6ccfe108ee023be87a938a9eab3",
+      "address": "0x2015a8219170ab3a182b04eb3aec5c03d90d8ed9",
+      "blockNumber": 11791687,
+      "creationCodeHash": "9b130100276e5dd84d6639bb5ccfac3c26928de11d4bd53e4d86bc81b9ac5a62"
+    },
+    {
+      "name": "AllowlistLaunchHook",
+      "txHash": "0x5be2e8a51334113be66fab2285dc0fa170c08d5de8b3eddf87b9b4c94647bc1e",
+      "abiHash": "722ef304d692a0aae8cb5fc66a2c89f6e1c32cfac857740cdf85aa022c809a70",
+      "address": "0x4603d148f937794acfaad2763afb439842df5080",
+      "blockNumber": 11791687,
+      "creationCodeHash": "460828085b3c61cc368e48a05750ff451df6572863cbfb6e4c2ea8e1f1b29d80"
+    }
+  ],
+  "sourceCommit": "08396f8a2a57439278b3a7f01ac26550bb2277a9",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "731560ba743832dc14314903b6617f47839f7e73e04226e8362752b755f85b93"
+}
